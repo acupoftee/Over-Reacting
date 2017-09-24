@@ -1,29 +1,27 @@
 import React from 'react'
 import glamorous from 'glamorous'
-import genji from './assets/heroes/genji.png'
-import mccree from './assets/heroes/mccree.png'
-import pharah from './assets/heroes/pharah.png'
-import reaper from './assets/heroes/reaper.png'
-import solder76 from './assets/heroes/solder-76.png'
-import sombra from './assets/heroes/sombra.png'
-import tracer from './assets/heroes/tracer.png'
-import bastion from './assets/heroes/bastion.png'
-import hanzo from './assets/heroes/hanzo.png'
-import tracer from './assets/heroes/tracer.png'
-import junkrat from './assets/heroes/junkray.png'
-import mei from './assets/heroes/mei.png'
-import torbjorn from './assets/heroes/torbjorn.png'
-import widowmaker from './assets/heroes/widowmaker.png'
-import dva from './assets/heroes/dva.png'
-import reinhardt from './assets/heroes/reinhardt.png'
-import roadhog from './assets/heroes/roadhog.png'
-import winston from './assets/heroes/winston.png'
-import zarya from './assets/heroes/zarya.png'
-import lucio from './assets/heroes/lucio.png'
-import mercy from './assets/heroes/mercy.png'
-import symmetra from './assets/heroes/symmetra.png'
-import zenyatta from './assets/heroes/zenyatta.png'
-import mercy from './assets/heroes/mercy.png'
+import genji from './assets/heros/genji.png'
+import mccree from './assets/heros/mccree.png'
+import pharah from './assets/heros/pharah.png'
+import reaper from './assets/heros/reaper.png'
+import solder76 from './assets/heros/soldier-76.png'
+import sombra from './assets/heros/sombra.png'
+import tracer from './assets/heros/tracer.png'
+import bastion from './assets/heros/bastion.png'
+import hanzo from './assets/heros/hanzo.png'
+import junkrat from './assets/heros/junkrat.png'
+import mei from './assets/heros/mei.png'
+import torbjorn from './assets/heros/torbjorn.png'
+import widowmaker from './assets/heros/widowmaker.png'
+import dva from './assets/heros/dva.png'
+import reinhardt from './assets/heros/reinhardt.png'
+import roadhog from './assets/heros/roadhog.png'
+import winston from './assets/heros/winston.png'
+import zarya from './assets/heros/zarya.png'
+import lucio from './assets/heros/lucio.png'
+import mercy from './assets/heros/mercy.png'
+import symmetra from './assets/heros/symmetra.png'
+import zenyatta from './assets/heros/zenyatta.png'
 
 const images = {
     genji,
@@ -54,7 +52,7 @@ const Heroes = glamorous.div({
     gridArea: 'heroes',
     display: 'grid',
     gridTemplateColumns: '241px 213px 206px 177px',
-    paddingLeft: '75px',
+    justifyContent: 'center',
     gridColumnGap: '32px'
 })
 
@@ -81,9 +79,10 @@ const Option = ({ hero, selectHero }) => {
                 transform: 'scale(1.15) skewX(-15deg) translate(-2px, 2px)',
                 bowShadow: '0px 0px 0px 3px #fff',
                 zIndex: 2
-            }  
+            },
+            justifyContent: 'center'
         },
-        ({ hero }) => ({ backgroundImage: `url(${assets[hero]})` })
+        ({ hero }) => ({ backgroundImage: `url(${images[hero]})` })
     )
     return <Element hero={hero} onClick={clickHandler} />
 }
