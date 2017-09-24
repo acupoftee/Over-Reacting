@@ -4,7 +4,7 @@ import genji from './assets/heros/genji.png'
 import mccree from './assets/heros/mccree.png'
 import pharah from './assets/heros/pharah.png'
 import reaper from './assets/heros/reaper.png'
-import solder76 from './assets/heros/soldier-76.png'
+import soldier76 from './assets/heros/soldier-76.png'
 import sombra from './assets/heros/sombra.png'
 import tracer from './assets/heros/tracer.png'
 import bastion from './assets/heros/bastion.png'
@@ -28,7 +28,7 @@ const images = {
     mccree,
     pharah,
     reaper,
-    solder76,
+    soldier76,
     sombra,
     tracer,
     bastion,
@@ -93,7 +93,7 @@ const Attack = ({ selectHero }) =>
         <Option hero='mccree' selectHero={selectHero} />
         <Option hero='pharah' selectHero={selectHero} /> 
         <Option hero='reaper' selectHero={selectHero} /> 
-        <Option hero='solder76' selectHero={selectHero} /> 
+        <Option hero='soldier76' selectHero={selectHero} /> 
         <Option hero='genji' selectHero={selectHero} /> 
     </Category>
 

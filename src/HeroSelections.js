@@ -5,7 +5,7 @@ import genji from './assets/selected-heros/genji.png'
 import mccree from './assets/selected-heros/mccree.png'
 import pharah from './assets/selected-heros/pharah.png'
 import reaper from './assets/selected-heros/reaper.png'
-import solder76 from './assets/selected-heros/soldier-76.png'
+import soldier76 from './assets/selected-heros/soldier-76.png'
 import sombra from './assets/selected-heros/sombra.png'
 import tracer from './assets/selected-heros/tracer.png'
 import bastion from './assets/selected-heros/bastion.png'
@@ -29,7 +29,7 @@ const images = {
     mccree,
     pharah,
     reaper,
-    solder76,
+    soldier76,
     sombra,
     tracer,
     bastion,
@@ -133,7 +133,7 @@ const pretendPlayers = [
     },
     {
         name: 'Pha20rah',
-        hero: 'solder76'
+        hero: 'soldier76'
     },
     {
         name: 'Meep3r',
