@@ -11,7 +11,7 @@ const timestamps = {
   tracer: { start: 98.1, end: 102.5 },
   hanzo: { start: 136.8, end: 140.5 },
   junkrat: { start: 156.2, end: 160.8 },
-  mei: { start: 175.4, end: 180 },
+  mei: { start: 181, end: 184 },
   torbjorn: { start: 194.5, end: 199.4 },
   widowmaker: { start: 214.3, end: 218.9 },
   dva: { start: 233.7, end: 238.3 },

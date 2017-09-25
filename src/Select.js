@@ -4,19 +4,20 @@ import glamorous from 'glamorous'
 const Select = glamorous.div({
     gridArea: 'select',
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    padding: '100px'
 })
 
 const Button = glamorous.button({
-    height: '32px',
-    width: '110px',
+    height: '42px',
+    width: '120px',
     border: 'none',
     marginTop: '15px',
     fontSize: '22px',
     fontFamily: 'Overwatch',
     letterSpacing: '2px',
     color: '#fff',
-    background: '#B47900',
+    background: 'rgba(180, 121, 0, 0.7)',
     ':hover': {
         background: '#Df9600'
     }

@@ -11,7 +11,9 @@ const GameType = glamorous.div({
     fontSize: '90px',
     fontStyle: 'italic',
     fontFamily: 'Overwatch',
-    color: '#ce1631'
+    color: '#ce1631',
+    // color: '-webkit-linear-gradient(#ce1631, #000)'
+
 })
 
 const Map = glamorous.div({

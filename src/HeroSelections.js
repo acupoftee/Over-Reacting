@@ -54,7 +54,8 @@ const HeroSelections = glamorous.div({
     display: 'grid',
     gridTemplateColumns: 'repeat(6, 77px)',
     justifyContent: 'center',
-    gridColumnGap: '29px'
+    gridColumnGap: '29px',
+    padding: '90px'
 })
 
 const Selection = glamorous.div({

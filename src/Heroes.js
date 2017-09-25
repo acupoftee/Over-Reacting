@@ -53,7 +53,8 @@ const Heroes = glamorous.div({
     display: 'grid',
     gridTemplateColumns: '241px 213px 206px 177px',
     justifyContent: 'center',
-    gridColumnGap: '32px'
+    gridColumnGap: '32px',
+    padding: '100px'
 })
 
 const Category = glamorous.div({
@@ -65,8 +66,8 @@ const Option = ({ hero, selectHero }) => {
     const clickHandler = () => selectHero(hero)
     const Element = glamorous.div(
         {
-            width: '30px',
-            height: '44px',
+            width: '40px',
+            height: '54px',
             background: 'black',
             marginRight: '3.2px',
             backgroundSize: 'cover',
@@ -80,7 +81,7 @@ const Option = ({ hero, selectHero }) => {
                 bowShadow: '0px 0px 0px 3px #fff',
                 zIndex: 2
             },
-            justifyContent: 'center'
+            justifyContent: 'center',
         },
         ({ hero }) => ({ backgroundImage: `url(${images[hero]})` })
     )
