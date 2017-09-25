@@ -147,7 +147,7 @@ export default ({ hero }) =>
         <Selection>
             <Hero hero={hero} />
             <Info>
-                <Name>Lukosa</Name>
+                <Name>B&eacute;thy</Name>
                 <HeroDropdown />
             </Info>
         </Selection>
