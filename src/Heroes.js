@@ -96,7 +96,6 @@ const Attack = ({ selectHero }) =>
         <Option hero='pharah' selectHero={selectHero} /> 
         <Option hero='reaper' selectHero={selectHero} /> 
         <Option hero='soldier76' selectHero={selectHero} />
-        <Option hero='tracer' selectHero={selectHero} /> 
     </Category>
 
 const Defense = ({ selectHero }) =>

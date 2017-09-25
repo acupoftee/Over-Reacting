@@ -8,11 +8,13 @@ const Game = glamorous.div({
 })
 
 const GameType = glamorous.div({
-    fontSize: '90px',
+    fontSize: '100px',
     fontStyle: 'italic',
     fontFamily: 'Overwatch',
-    color: '#ce1631',
-    // color: '-webkit-linear-gradient(#ce1631, #000)'
+    color: '#ce1631'
+    //  background: '-webkit-linear-gradient(#ce1631, #000)',
+    //  webkitBackgroundClip: 'text',
+    //  webkitTextFillColor: 'transparent'
 
 })
 
