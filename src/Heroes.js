@@ -78,10 +78,10 @@ const Option = ({ hero, selectHero }) => {
             transitionDuration: '25ms',
             ':hover': {
                 transform: 'scale(1.15) skewX(-15deg) translate(-2px, 2px)',
-                bowShadow: '0px 0px 0px 3px #fff',
+                boxShadow: 'inset 1px 2px 1px 1px #fff, 1px 1px 1px 1px #fff',
                 zIndex: 2
             },
-            justifyContent: 'center',
+            justifyContent: 'center'
         },
         ({ hero }) => ({ backgroundImage: `url(${images[hero]})` })
     )
