@@ -91,11 +91,11 @@ const Option = ({ hero, selectHero }) => {
 const Attack = ({ selectHero }) =>
     <Category>
         <Option hero='genji' selectHero={selectHero} />
-        <Option hero='tracer' selectHero={selectHero} /> 
         <Option hero='mccree' selectHero={selectHero} />
         <Option hero='pharah' selectHero={selectHero} /> 
         <Option hero='reaper' selectHero={selectHero} /> 
         <Option hero='soldier76' selectHero={selectHero} />
+        <Option hero='tracer' selectHero={selectHero} /> 
     </Category>
 
 const Defense = ({ selectHero }) =>
