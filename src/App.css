@@ -27,3 +27,8 @@
   font-family: Overwatch;
   src: url("./fonts/BigNoodleToo.ttf")
 }
+
+@font-face {
+  font-family: Futura;
+  src: url("./fonts/Futura.ttf")
+}

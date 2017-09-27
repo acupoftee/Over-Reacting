@@ -22,6 +22,10 @@ import lucio from './assets/heros/lucio.png'
 import mercy from './assets/heros/mercy.png'
 import symmetra from './assets/heros/symmetra.png'
 import zenyatta from './assets/heros/zenyatta.png'
+import defense from './assets/roles/defense.png'
+import offense from './assets/roles/offense.png'
+import support from './assets/roles/support.png'
+import tank from './assets/roles/tank.png'
 
 const images = {
     genji,
@@ -48,6 +52,13 @@ const images = {
     mercy
 }
 
+const shields = {
+    defense,
+    offense,
+    support,
+    tank
+}
+
 const Heroes = glamorous.div({
     gridArea: 'heroes',
     display: 'grid',
@@ -61,6 +72,28 @@ const Category = glamorous.div({
     display: 'flex',
     alignItems: 'center'
 })
+
+const Shield = ({ shield }) => {
+    const ShieldElement = glamorous.div(
+        {
+            width: '50px',
+            height: '50px',
+            border: '1px solid #fff',
+            display: 'inline',
+            borderRadius: '50%',
+            justifyContent: 'center',
+            transform: 'scaleY(-1)',
+            '::after': {
+                content: '^',
+                color: '#fff',
+                fontFamily: 'Overwatch'
+            }
+        },
+        ({ shield }) => ({ backgroundImage: `url(${shields[shield]}` })
+    )
+    return <ShieldElement shield={shield} />
+}
+
 
 const Option = ({ hero, selectHero }) => {
     const clickHandler = () => selectHero(hero)

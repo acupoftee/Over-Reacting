@@ -14,7 +14,7 @@ const Button = glamorous.button({
     border: 'none',
     marginTop: '15px',
     fontSize: '22px',
-    fontFamily: 'Overwatch',
+    fontFamily: 'Futura',
     letterSpacing: '2px',
     color: '#fff',
     background: 'rgba(180, 121, 0, 0.7)',
@@ -25,5 +25,5 @@ const Button = glamorous.button({
 
 export default () =>
     <Select>
-        <Button>Select</Button>
+        <Button>SELECT</Button>
     </Select>
