@@ -73,26 +73,26 @@ const Category = glamorous.div({
     alignItems: 'center'
 })
 
-const Shield = ({ shield }) => {
-    const ShieldElement = glamorous.div(
-        {
-            width: '50px',
-            height: '50px',
-            border: '1px solid #fff',
-            display: 'inline',
-            borderRadius: '50%',
-            justifyContent: 'center',
-            transform: 'scaleY(-1)',
-            '::after': {
-                content: '^',
-                color: '#fff',
-                fontFamily: 'Overwatch'
-            }
-        },
-        ({ shield }) => ({ backgroundImage: `url(${shields[shield]}` })
-    )
-    return <ShieldElement shield={shield} />
-}
+// const Shield = ({ shield }) => {
+//     const ShieldElement = glamorous.div(
+//         {
+//             width: '50px',
+//             height: '50px',
+//             border: '1px solid #fff',
+//             display: 'inline',
+//             borderRadius: '50%',
+//             justifyContent: 'center',
+//             transform: 'scaleY(-1)',
+//             '::after': {
+//                 content: '^',
+//                 color: '#fff',
+//                 fontFamily: 'Overwatch'
+//             }
+//         },
+//         ({ shield }) => ({ backgroundImage: `url(${shields[shield]}` })
+//     )
+//     return <ShieldElement shield={shield} />
+// }
 
 
 const Option = ({ hero, selectHero }) => {
